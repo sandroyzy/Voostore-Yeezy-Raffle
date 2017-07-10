@@ -8,7 +8,7 @@ form_url = 'https://www.vooberlin.com/raffle/index/post'
 
 headers = {'User-Agent':
            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
-           # enter user agent above. Can be found here whoishostingthis.com/tools/user-agent
+           # ENTER User Agent above. Can be found here whoishostingthis.com/tools/user-agent
 
 session = requests.Session()
 session.headers.update(headers)
