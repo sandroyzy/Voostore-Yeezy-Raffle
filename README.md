@@ -34,7 +34,7 @@ Script in Python 3 to enter multiple entries with one gmail email adress.
 </li>
 <li>
 (You're now on the right folder) - after, type :</ol>
-<pre><code>python3 Voostore.py
+<pre><code>python3 voostore.py
 </code></pre>
 <p>If you have a message saying "No module named 'requests'". Type :
 <pre><code>pip3 install requests</code></pre></p>
