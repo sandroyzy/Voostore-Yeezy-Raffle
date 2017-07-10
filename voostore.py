@@ -8,6 +8,7 @@ form_url = 'https://www.vooberlin.com/raffle/index/post'
 
 headers = {'User-Agent':
            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
+           # enter user agent above. Can be found here whoishostingthis.com/tools/user-agent
 
 session = requests.Session()
 session.headers.update(headers)
@@ -16,7 +17,7 @@ session.headers.update(headers)
 def main(limit):
     sitekey = sitekey_search()
 
-    api_key = '' # COPY YOUR 2CAPTCHA KEY HERE.
+    api_key = '' # COPY YOUR 2CAPTCHA KEY HERE. Should be buy here 2captcha.com
 
     for i in range(1, limit):
         cap_id = session.post("http://2captcha.com/in.php?key={}&method=userrecaptcha&googlekey={}&pageurl={}".format(api_key, sitekey, main_url)).text.split('|')[1]
